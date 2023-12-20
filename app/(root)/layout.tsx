@@ -11,18 +11,18 @@ import Topbar from "@/components/shared/Topbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Threads",
-    description: "A Next.js 14 Meta Threads Application",
+    title: "Gatot Kaca",
+    description: "A Next.js 14 Gatot Kaca Meta Threads Application",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <ClerkProvider>
             <html lang="en">
-                <body className={inter.className}>
+                <body className={inter.className} suppressHydrationWarning={true}>
                     <Topbar />
                     
-                    <main>
+                    <main className="flex flex-row">
                         <LeftSidebar />
                         
                         <section className="main-container">

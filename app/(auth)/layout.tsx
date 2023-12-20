@@ -12,8 +12,8 @@ const inter = Inter({ subsets: ["latin"]})
 export default function RootLayout({ children }: { children : React.ReactNode }) {
     return (
         <ClerkProvider>
-            <html>
-                <body className={`${inter.className} bg-dark-1 flex justify-center items-center h-screen`}>
+            <html lang="en">
+                <body className={`${inter.className} bg-dark-1 flex justify-center items-center h-screen`} suppressHydrationWarning={true}>
                     { children }
                 </body>
             </html>

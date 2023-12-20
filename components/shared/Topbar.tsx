@@ -20,7 +20,7 @@ export default function Topbar() {
                         </SignOutButton>
                     </SignedIn>
                 </div>
-                <OrganizationSwitcher appearance={{ elements: { organizationSwitcherTrigger: "py-2 px-4 bg-white" } }} />
+                <OrganizationSwitcher appearance={{ elements: { organizationSwitcherTrigger: "py-2 px-4 text-white" } }} />
             </div>
         </nav>
     );
