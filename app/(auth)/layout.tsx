@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children : React.ReactNode })
     return (
         <ClerkProvider>
             <html lang="en">
-                <body className={`${inter.className} bg-dark-1 flex justify-center items-center h-screen`} suppressHydrationWarning={true}>
+                <body className={`${inter.className} bg-dark-1 flex h-screen justify-center items-center`} suppressHydrationWarning={true}>
                     { children }
                 </body>
             </html>
